@@ -77,7 +77,7 @@ class UserSignupPage extends React.Component {
                             onClick={this.onClickSignup}
                             disabled={this.state.pendingApiCall}
                         >
-                            <span className="spinner-border spinner-border-sm"></span> Sign Up
+                            {this.state.pendingApiCall && <span className="spinner-border spinner-border-sm"></span>} Sign Up
                         </button>
                     </div>
                 </form>
